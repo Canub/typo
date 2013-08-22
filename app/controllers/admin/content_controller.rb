@@ -34,7 +34,13 @@ class Admin::ContentController < Admin::BaseController
       flash[:error] = _("Error, you are not allowed to perform this action")
       return
     end
+    
+    if current_user.admin?
+      @edit_and_admin = true;
+    end
+    
     new_or_edit
+    
   end
 
   def destroy
@@ -239,5 +245,9 @@ class Admin::ContentController < Admin::BaseController
 
   def setup_resources
     @resources = Resource.by_created_at
+  end
+  
+  def merge_words
+  	flash[:notice] = "merge developing"
   end
 end
