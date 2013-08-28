@@ -249,5 +249,6 @@ class Admin::ContentController < Admin::BaseController
   
   def merge_words
   	flash[:notice] = "merge developing"
+  	redirect_to edit_content_admin(params[:merge_with])
   end
 end

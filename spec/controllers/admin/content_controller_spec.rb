@@ -671,4 +671,17 @@ describe Admin::ContentController do
 
     end
   end
+ # shared_examples_for 'merge_articles' do
+  	describe 'Merging two articles' do
+  		#it 'should recive two article ids' do
+  		
+  	#	end
+  		it 'should call merge method from the model' do
+  		#	Article.should_receive(:merge_with).with("1")
+  			#get :merge_words, {:id => 1}
+  		end 		
+  		it 'should contain a author and a title form one of the articles' do
+  		end
+  	end
+  #end
 end

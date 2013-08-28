@@ -47,6 +47,10 @@ Given /^the blog is set up$/ do
                 :profile_id => 2,
                 :name => 'quim',
                 :state => 'active'})
+	Category.create!({:name => 'cat1',
+                :keywords => 'aaaaaaaa',
+                :permalink => '',
+                :description => 'active'})
 end
 
 And /^I am logged into the admin panel$/ do

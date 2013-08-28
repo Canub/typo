@@ -1,4 +1,4 @@
 
 	<h4><%= _("Merge Articles") %></h4>
 	Article ID	<input type="text_field" name="merge_with" id="merge_with"/>
-	<%= submit_tag "Merge", :action => 'merge_words'%>
+	<%= submit_tag "Merge", :url => url_for(:controller => 'content' , :action => 'merge_words')%>
